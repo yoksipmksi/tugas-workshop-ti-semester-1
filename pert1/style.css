@@ -22,3 +22,8 @@
         background-color: #f8f9fa;
         color: #000;
     }
+
+    .glass-nav {
+            backdrop-filter: blur(10px);
+            background: rgba(var(--bs-body-bg-rgb), 0.8);
+        }
