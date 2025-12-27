@@ -1,0 +1,24 @@
+    /* Card & sidebar menyesuaikan tema */
+    [data-bs-theme="dark"] .bg-light {
+        background-color: #1e1e1e !important;
+        color: #f8f9fa;
+    }
+
+    [data-bs-theme="dark"] .border-end {
+        border-color: rgba(255,255,255,.1) !important;
+    }
+
+    [data-bs-theme="dark"] .text-secondary {
+        color: #adb5bd !important;
+    }
+
+    /* Tombol outline tetap kontras */
+    [data-bs-theme="dark"] .btn-outline-dark {
+        color: #f8f9fa;
+        border-color: #f8f9fa;
+    }
+
+    [data-bs-theme="dark"] .btn-outline-dark:hover {
+        background-color: #f8f9fa;
+        color: #000;
+    }

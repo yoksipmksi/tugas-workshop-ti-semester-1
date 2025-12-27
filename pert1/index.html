@@ -1,279 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Tim</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top">
+<body class="bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg fixed-top bg-body shadow-sm border-bottom">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Tugas Workshop</a>
+            <a class="navbar-brand fw-black fs-4 tracking-tight" href="#">
+                <span class="text-primary text-uppercase fw-bold">Workshop</span>
+            </a>
 
-            <ul class="navbar-nav ms-auto gap-3 align-items-center">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                <li class="nav-item">
-                    <button id="themeToggle" class="btn btn-outline-secondary btn-sm">
-                        <i class="bi bi-moon-fill"></i>
-                    </button>
-                </li>
-            </ul>
+            <div class="d-flex align-items-center gap-2">
+                <ul class="navbar-nav d-none d-md-flex flex-row gap-4 me-4">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#team">Team</a>
+                    </li>
+                </ul>
+                <button id="themeToggle"
+                    class="btn bg-body-secondary border rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                    style="width: 50px; height: 50px">
+                    <i class="bi bi-moon-stars-fill"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <section class="vh-100 d-flex align-items-center bg-body">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold mb-3">
-                Selamat Datang <br class="d-none d-md-block">
-                Di Profil Tim Kami
-            </h1>
-
-            <p class="lead text-body-secondary fw-semibold mb-4">
-                Kami adalah mahasiswa yang sedang belajar tentang dasar pembuatan website.
-            </p>
-
-            <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
-                <span class="badge text-bg-primary">Team Project</span>
-                <span class="badge text-bg-success">Bootstrap</span>
-                <span class="badge text-bg-danger">Workshop</span>
-                <span class="badge text-bg-warning">Informatics</span>
-            </div>
-
-            <div class="d-flex justify-content-center gap-3">
-                <a href="#team" class="btn btn-outline-primary border-3 rounded-pill fw-semibold px-4">
-                    Scroll untuk melihat Tim Kami
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="team" class="py-5 bg-body-secondary">
+    <section class="min-vh-100 d-flex align-items-center pt-5 bg-gradient shadow">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5">Tim Kami</h2>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-
-                    <div class="card shadow-lg border-0 rounded-4 bg-body">
-                        <div class="row g-0">
-
-                            <div class="col-md-3 p-3 border-end border-body-secondary">
-                                <div class="nav flex-column nav-pills gap-2" role="tablist">
-                                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#anggota1">
-                                        Dhimas Indra Maulana
-                                    </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#anggota2">
-                                        hahahahahhaha
-                                    </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#anggota3">
-                                        hahahahahhaha
-                                    </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#anggota4">
-                                        hahahahahhaha
-                                    </button>
-                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#anggota5">
-                                        hahahahahhaha
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="col-md-9 p-4">
-                                <div class="tab-content">
-                                    <div class="tab-pane fade show active" id="anggota1">
-                                        <div class="row align-items-center mb-4">
-                                            <div class="col-sm-3 text-center mb-3 mb-sm-0">
-                                                <img src="yyy.jpeg" class="img-fluid rounded-circle shadow-sm"
-                                                    alt="Anggota 1">
-                                            </div>
-                                            <div class="col-sm-9">
-                                                <h3 class="fw-bold mb-1">Dhimas Indra Maulana</h3>
-                                                <p class="text-body-secondary mb-0">
-                                                    I Don't Know What I'm Doing.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4">
-                                            <div class="col-sm-6 mb-2"><strong>Kelas</strong><br><span
-                                                    class="text-body-secondary">B Informatika Semester 1</span></div>
-                                            <div class="col-sm-6 mb-2"><strong>Hobi</strong><br><span
-                                                    class="text-body-secondary">Game</span></div>
-                                            <div class="col-sm-6"><strong>Asal Sekolah</strong><br><span
-                                                    class="text-body-secondary">SMKN 1 Jenangan Ponorogo</span></div>
-                                        </div>
-                                        <div class="d-flex gap-3 fs-4">
-                                            <a href="https://instagram.com/y_oksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="Instagram">
-                                                <i class="bi bi-instagram fs-2"></i>
-                                            </a>
-                                            <a href="https://github.com/yoksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="GitHub">
-                                                <i class="bi bi-github fs-2"></i>
-                                            </a>
-                                            <a href="https://saweria.co/yoksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="Saweria">
-                                                <i class="bi bi-coin fs-2"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="anggota2">
-                                        <div class="row align-items-center mb-4">
-                                            <div class="col-sm-3 text-center mb-3 mb-sm-0">
-                                                <img src="yyy.jpeg" class="img-fluid rounded-circle shadow-sm"
-                                                    alt="Anggota 2">
-                                            </div>
-                                            <div class="col-sm-9">
-                                                <h3 class="fw-bold mb-1">hahahahahhaha</h3>
-                                                <p class="text-body-secondary mb-0">
-                                                    hahahahahhaha
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4">
-                                            <div class="col-sm-6 mb-2"><strong>Kelas</strong><br>hahahahahhaha</div>
-                                            <div class="col-sm-6 mb-2"><strong>Hobi</strong><br>hahahahahhaha</div>
-                                            <div class="col-sm-6"><strong>Asal Sekolah</strong><br>hahahahahhaha</div>
-                                        </div>
-                                        <div class="d-flex gap-3 fs-4">
-                                            <a href="https://instagram.com/y_oksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="Instagram">
-                                                <i class="bi bi-instagram fs-2"></i>
-                                            </a>
-                                            <a href="https://github.com/yoksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="GitHub">
-                                                <i class="bi bi-github fs-2"></i>
-                                            </a>
-                                            <a href="https://saweria.co/yoksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="Saweria">
-                                                <i class="bi bi-coin fs-2"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="anggota3">
-                                        <div class="row align-items-center mb-4">
-                                            <div class="col-sm-3 text-center mb-3 mb-sm-0">
-                                                <img src="yyy.jpeg" class="img-fluid rounded-circle shadow-sm"
-                                                    alt="Anggota 3">
-                                            </div>
-                                            <div class="col-sm-9">
-                                                <h3 class="fw-bold mb-1">hahahahahhaha</h3>
-                                                <p class="text-body-secondary mb-0">
-                                                    hahahahahhaha
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4">
-                                            <div class="col-sm-6 mb-2"><strong>Kelas</strong><br>hahahahahhaha</div>
-                                            <div class="col-sm-6 mb-2"><strong>Hobi</strong><br>hahahahahhaha</div>
-                                            <div class="col-sm-6"><strong>Asal Sekolah</strong><br>hahahahahhaha</div>
-                                        </div>
-                                        <div class="d-flex gap-3 fs-4">
-                                            <a href="https://instagram.com/y_oksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="Instagram">
-                                                <i class="bi bi-instagram fs-2"></i>
-                                            </a>
-                                            <a href="https://github.com/yoksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="GitHub">
-                                                <i class="bi bi-github fs-2"></i>
-                                            </a>
-                                            <a href="https://saweria.co/yoksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="Saweria">
-                                                <i class="bi bi-coin fs-2"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="anggota4">
-                                        <div class="row align-items-center mb-4">
-                                            <div class="col-sm-3 text-center mb-3 mb-sm-0">
-                                                <img src="yyy.jpeg" class="img-fluid rounded-circle shadow-sm"
-                                                    alt="Anggota 4">
-                                            </div>
-                                            <div class="col-sm-9">
-                                                <h3 class="fw-bold mb-1">hahahahahhaha</h3>
-                                                <p class="text-body-secondary mb-0">
-                                                    hahahahahhaha
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-4">
-                                            <div class="col-sm-6 mb-2"><strong>Kelas</strong><br>hahahahahhaha</div>
-                                            <div class="col-sm-6 mb-2"><strong>Hobi</strong><br>hahahahahhaha</div>
-                                            <div class="col-sm-6"><strong>Asal Sekolah</strong><br>hahahahahhaha</div>
-                                        </div>
-                                        <div class="d-flex gap-3 fs-4">
-                                            <a href="https://instagram.com/y_oksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="Instagram">
-                                                <i class="bi bi-instagram fs-2"></i>
-                                            </a>
-                                            <a href="https://github.com/yoksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="GitHub">
-                                                <i class="bi bi-github fs-2"></i>
-                                            </a>
-                                            <a href="https://saweria.co/yoksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="Saweria">
-                                                <i class="bi bi-coin fs-2"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="anggota5">
-                                        <div class="row align-items-center mb-4">
-                                            <div class="col-sm-3 text-center mb-3 mb-sm-0">
-                                                <img src="yyy.jpeg" class="img-fluid rounded-circle shadow-sm"
-                                                    alt="Anggota 5">
-                                            </div>
-                                            <div class="col-sm-9">
-                                                <h3 class="fw-bold mb-1">hahahahahhaha</h3>
-                                                <p class="text-body-secondary mb-0">
-                                                    hahahahahhaha
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-4">
-                                            <div class="col-sm-6 mb-2"><strong>Kelas</strong><br>hahahahahhaha</div>
-                                            <div class="col-sm-6 mb-2"><strong>Hobi</strong><br>hahahahahhaha</div>
-                                            <div class="col-sm-6"><strong>Asal Sekolah</strong><br>hahahahahhaha</div>
-                                        </div>
-                                        <div class="d-flex gap-3 fs-4">
-                                            <a href="https://instagram.com/y_oksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="Instagram">
-                                                <i class="bi bi-instagram fs-2"></i>
-                                            </a>
-                                            <a href="https://github.com/yoksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="GitHub">
-                                                <i class="bi bi-github fs-2"></i>
-                                            </a>
-                                            <a href="https://saweria.co/yoksipmksi" target="_blank"
-                                                class="text-decoration-none text-body" aria-label="Saweria">
-                                                <i class="bi bi-coin fs-2"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
+            <div class="row align-items-center g-5">
+                <div class="col -lg-7 text-center text-lg-start">
+                    <div
+                        class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill mb-3">
+                        Project v1.0 • Informatics Workshop
                     </div>
-
+                    <h1 class="display-2 fw-bold mb-3 ls-tight">
+                        <span class="text-primary">Wellcome</span> to the
+                        <br />Our Team.
+                    </h1>
+                    <p class="lead text-secondary mb-5 pe-lg-5">
+                        Kami adalah mahasiswa yang sedang belajar tentang
+                        dasar pembuatan website.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                        <a href="#team" class="btn btn-primary btn-lg px-5 py-3 rounded-4 shadow-sm fw-bold">
+                            Lihat Tim Kami
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div
+                        class="p-5 bg-primary bg-opacity-10 rounded-5 shadow-sm border border-primary-subtle text-center shadow-lg">
+                        <i class="bi bi-code-square display-1 text-primary"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-4 bg-body-tertiary text-center">
-        <p class="mb-0">© 2025 HAhahahaahahha</p>
+    <section id="team" class="py-5 bg-body">
+        <div class="container py-5">
+            <div class="row mb-3 justify-content-center text-center">
+                <div class="col-md-6">
+                    <h2 class="display-5 fw-bold mb-3">Tim Kami...</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="card border-0 rounded-5 overflow-hidden" style="
+                                box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+                                margin: 15px;
+                            ">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-lg-3 bg-light border-end">
+                                <div class="nav flex-column nav-pills p-3 gap-2 py-4" role="tablist">
+                                    <button class="nav-link active py-3 text-start rounded-4 fw-semibold shadow-sm"
+                                        data-bs-toggle="pill" data-bs-target="#m1">
+                                        Dhimas Indra
+                                    </button>
+                                    <button class="nav-link py-3 text-start rounded-4 fw-semibold shadow-sm"
+                                        data-bs-toggle="pill" data-bs-target="#m2">
+                                        Anggota 2
+                                    </button>
+                                    <button class="nav-link py-3 text-start rounded-4 fw-semibold shadow-sm"
+                                        data-bs-toggle="pill" data-bs-target="#m3">
+                                        Anggota 3
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-lg-9 bg-body">
+                                <div class="tab-content p-4 p-lg-5">
+                                    <div class="tab-pane fade show active" id="m1">
+                                        <div class="row align-items-center g-4">
+                                            <div class="col-sm-4 text-center">
+                                                <img src="yyy.jpeg" class="img-fluid rounded-5 shadow" alt="Profile" />
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <h3 class="fw-bold mb-1">
+                                                    Dhimas Indra Maulana
+                                                </h3>
+                                                <span class="badge bg-primary-subtle text-primary mb-3">Idk who tf
+                                                    i,m</span>
+                                                <p class="text-secondary small">
+                                                    "HaHaHa."
+                                                </p>
+
+                                                <div class="row g-3">
+                                                    <div class="col-6">
+                                                        <div class="p-3 bg-light rounded-4 shadow">
+                                                            <small
+                                                                class="text-uppercase fw-bold text-muted d-block mb-1"
+                                                                style="
+                                                                        font-size: 0.7rem;
+                                                                    ">Kelas</small>
+                                                            <span class="fw-semibold">B1 2025</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="p-3 bg-light rounded-4 shadow">
+                                                            <small
+                                                                class="text-uppercase fw-bold text-muted d-block mb-1"
+                                                                style="
+                                                                        font-size: 0.7rem;
+                                                                    ">Hobi</small>
+                                                            <span class="fw-semibold">Sleep</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="p-3 bg-light rounded-4 shadow">
+                                                            <small
+                                                                class="text-uppercase fw-bold text-muted d-block mb-1"
+                                                                style="
+                                                                        font-size: 0.7rem;
+                                                                    ">Asal
+                                                                Sekolah</small>
+                                                            <span class="fw-semibold">SMKN 1
+                                                                JenPo</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m-2 d-flex gap-3 mt-4">
+                                            <a href="https://instagram.com/y_oksipmksi" target="_blank"
+                                                class="btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center p-0 border-2"
+                                                style="
+                                                        width: 40px;
+                                                        height: 40px;
+                                                    ">
+                                                <i class="bi bi-instagram"></i>
+                                            </a>
+
+                                            <a href="https://github.com/yoksipmksi" target="_blank"
+                                                class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center p-0 border-2"
+                                                style="
+                                                        width: 40px;
+                                                        height: 40px;
+                                                    ">
+                                                <i class="bi bi-github"></i>
+                                            </a>
+
+                                            <a href="https://saweria.co/yoksipmksi" target="_blank"
+                                                class="btn btn-outline-warning rounded-pill px-4 d-flex align-items-center fw-bold shadow-sm border-2">
+                                                <i class="bi bi-coin me-2"></i>
+                                                Little Bit ツ
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="m2">
+                                        <h3 class="text-muted text-center py-5">Anggota 2</h3>
+                                    </div>
+                                    <div class="tab-pane fade" id="m3">
+                                        <h3 class="text-muted text-center py-5">Anggota 3</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <p class="small text-secondary mb-0">
+                © 2025 Workshop Team. Made with
+                <i class="bi bi-heart-fill text-danger mx-1"></i> and
+                Bootstrap.
+            </p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -283,14 +212,21 @@
         const html = document.documentElement;
 
         toggle.onclick = () => {
-            const theme = html.getAttribute("data-bs-theme");
-            html.setAttribute("data-bs-theme", theme === "light" ? "dark" : "light");
-            toggle.innerHTML = theme === "light"
-                ? '<i class="bi bi-sun-fill"></i>'
-                : '<i class="bi bi-moon-fill"></i>';
+            const currentTheme = html.getAttribute("data-bs-theme");
+            const newTheme = currentTheme === "light" ? "dark" : "light";
+            html.setAttribute("data-bs-theme", newTheme);
+
+            // Perbarui Icon
+            toggle.innerHTML =
+                newTheme === "light"
+                    ? '<i class="bi bi-moon-stars-fill"></i>'
+                    : '<i class="bi bi-sun-fill text-warning"></i>';
+
+            // Perbarui class button jika perlu
+            toggle.classList.toggle("btn-light");
+            toggle.classList.toggle("btn-dark");
         };
     </script>
-
 </body>
 
 </html>
